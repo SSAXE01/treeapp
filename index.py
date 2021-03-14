@@ -9,7 +9,7 @@ si_mail = str(form.getvalue("si_mail"))
 fle=form['filename']
 
 fn=os.path.basename(fle.filename)
-open("starting_page.html"+fn, "wb").write(fle.file.read())
+open("C:/Users/ranja/OneDrive/Desktop/MyApp/starting_page.html"+fn, "wb").write(fle.file.read())
 
 print('<html>')
 print('<body><center>')
