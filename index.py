@@ -1,4 +1,4 @@
-import cgi
+import cgi,os
 
 print('content-type:text/html\r\n\r\n')
 
@@ -6,9 +6,9 @@ form = cgi.FieldStorage()
 si_user = str(form.getvalue("si_user"))
 si_user_pass = str(form.getvalue("si_user_pass"))
 si_mail = str(form.getvalue("si_mail"))
-fle=form['filename']
+fle = form['starting_page.html']
 
-fn=os.path.basename(fle.filename)
+fn=os.path.basename(fle."starting_page.html")
 open("starting_page.html"+fn, "wb").write(fle.file.read())
 
 print('<html>')
